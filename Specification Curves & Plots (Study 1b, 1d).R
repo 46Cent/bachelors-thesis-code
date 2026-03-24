@@ -7,7 +7,7 @@ library(effectsize)
 library(specr)
 library(tidyverse)
 # Study 1b -----------------------------------------------------
-study1b <- read_sav("Paper Daten/Study 1b/Data/Study 1b Data.sav")
+study1b <- read_sav("Study Data/Study 1b/Data/Study 1b Data.sav")
 
 #'[ Formatting the Data:
 data_1b <- study1b %>% 
@@ -179,7 +179,7 @@ plotframe_1b %>%
 
 
 # Study 1d -----------------------------------------------------
-study1d <- read_sav("Paper Daten/Study 1d/Data/Study 1d Data.sav")
+study1d <- read_sav("Study Data/Study 1d/Data/Study 1d Data.sav")
 
 #'[ Formatting the Data
 data_1d <- study1d %>%
