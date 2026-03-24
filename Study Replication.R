@@ -8,7 +8,7 @@ library("tidyverse")
 
 # Study 1a ----------------------------------------------------------------
 
-study1a <- read_sav("Paper Daten/Study 1a/Data/Study 1a Data.sav")
+study1a <- read_sav("Study Data/Study 1a/Data/Study 1a Data.sav")
 
 #'[ Calculating the Mean:
 study1a %>% 
@@ -52,7 +52,7 @@ summary(LogRegStudy1a)
 
 # Study 1b ---------------------------------------------------------------
 
-study1b <- read_sav("Paper Daten/Study 1b/Data/Study 1b Data.sav")
+study1b <- read_sav("Study Data/Study 1b/Data/Study 1b Data.sav")
 
 #'[ Calculating the Mean
 study1b %>% 
@@ -91,7 +91,7 @@ summary(LogRegStudy1b)
 
 # Study 1c ---------------------------------------------------------------
 
-study1c <- read_sav("Paper Daten/Study 1c/Data/Study 1c Data.sav")
+study1c <- read_sav("Study Data/Study 1c/Data/Study 1c Data.sav")
 
 #'[ Calculating the Mean
 study1c %>% 
@@ -127,7 +127,7 @@ summary(LogRegStudy1c)
 
 # Study 1d ---------------------------------------------------------------
 
-study1d <- read_sav("Paper Daten/Study 1d/Data/Study 1d Data.sav")
+study1d <- read_sav("Study Data/Study 1d/Data/Study 1d Data.sav")
 
 #'[ Calculating the Mean
 study1d %>% 
@@ -173,7 +173,7 @@ summary(LogRegStudy1d)
 
 # Study 2 ---------------------------------------------------------------
 
-study2 <- read_sav("Paper Daten/Study 2/Data/Study 2 Data.sav")
+study2 <- read_sav("Study Data/Study 2/Data/Study 2 Data.sav")
 
 #'[ Calculating the Mean(s)
 
@@ -239,7 +239,7 @@ summary(LogRegStudy2)
 
 # Study 3a ---------------------------------------------------------------
 
-study3a <- read_sav("Paper Daten/Study 3a/Data/Study 3a Data.sav")
+study3a <- read_sav("Study Data/Study 3a/Data/Study 3a Data.sav")
 
 #'[ Calculating the Mean
 study3a %>% 
@@ -283,7 +283,7 @@ summary(LogRegStudy3a)
 
 # Study 3b ---------------------------------------------------------------
 
-study3b <- read_sav("Paper Daten/Study 3b/Data/Study 3b Data.sav")
+study3b <- read_sav("Study Data/Study 3b/Data/Study 3b Data.sav")
 
 #'[ Calculating the Mean
 study3b %>% 
@@ -319,7 +319,7 @@ confint(RegStudy3b)
 
 #'[ Conducting the regression on how accomplished they feel
 
-study3b_acc <- read_sav("Paper Daten/Study 3b/Achievement Mechanism Post-Test/Data/Achievement Post Test.sav")
+study3b_acc <- read_sav("Study Data/Study 3b/Achievement Mechanism Post-Test/Data/Achievement Post Test.sav")
 
 RegStudy3b_acc <- lm(AchivementPerception ~ GoalBasedLumpSum + WorktoReceive, data = study3b_acc)
 summary(RegStudy3b_acc)
@@ -340,7 +340,7 @@ study3b_acc %>%
   summarise(mean(AchivementPerception, na.rm = TRUE), na.rm = TRUE)
 # Study 4 ---------------------------------------------------------------
 
-study4 <- read_sav("Paper Daten/Study 4/Data/Study 4 Data.sav")
+study4 <- read_sav("Study Data/Study 4/Data/Study 4 Data.sav")
 
 #'[ Calculating the Mean
 study4 %>% 
